@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "t_cening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Kecamatan": "Singorojo", "Desa": "Cening", "Waktu": "2017-03-13", "X": 410866, "Y": 9207649 }, "geometry": { "type": "Point", "coordinates": [ 110.192735677190115, -7.167560557649936 ] } }
+]
+}

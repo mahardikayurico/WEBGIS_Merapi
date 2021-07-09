@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "t_bendosari",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Kecamatan": "Plantungan", "Desa": "Bendosari", "Waktu": "2016-02-21", "X": 386661, "Y": 9221187 }, "geometry": { "type": "Point", "coordinates": [ 109.973807838967261, -7.044681033801037 ] } }
+]
+}
