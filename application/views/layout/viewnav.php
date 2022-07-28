@@ -15,7 +15,7 @@
                         <a  href="<?=site_url('home/card')?>"><i class="fa fa-newspaper-o fa-3x"></i> Latar Belakang</a>
                     </li>
                     <li>
-                        <a  href="<?=site_url('home/data')?>"><i class="fa fa-database fa-3x"></i> Basis Data Posko</a>
+                        <a  href="<?=site_url('home/data')?>"><i class="fa fa-database fa-3x"></i> Basis Data</a>
                     
                         </li>
                         <li>

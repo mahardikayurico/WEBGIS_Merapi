@@ -33,4 +33,38 @@ class Model_mitigasi extends CI_Model //nama model
 		$this->db->order_by('id_mitigasi', $id_mitigasi);
 		return $this->db->get()->result();
 	}
+	public function get_all_krb()
+	{
+		return $this->db->get('tbl_krb')->result();
+	}
+
+	public function insert_krb()
+	{
+		$data = [
+            "nama" => $this->input->post('nama'),
+            "file" => $this->uploadFile()
+        ];
+        $this->db->insert('tbl_krb', $data);
+	}
+
+	private function uploadFile()
+    {
+        $config['upload_path']          = 'assets/file';
+        $config['allowed_types']        = 'pdf|doc|docx|csv|xls|xlsx|ppt';
+
+        $this->upload->initialize($config);
+
+        if ($this->upload->do_upload('file')) {
+			return $this->upload->data("file_name");
+        }
+		return $this->upload->display_errors();
+        // return "default.jpg";
+    }
+
+	public function delete_krb($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('tbl_krb');  
+             
+    }
 }

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class krb extends CI_Controller{
+class Krb extends CI_Controller{
 
     public function __construct()
     {
@@ -13,24 +13,7 @@ class krb extends CI_Controller{
 
     public function index()
     {
-        $data['data_krb'] = $this->krb_model->getAllkrb();
-        // $config = [
-        //     [
-        //         'field' => 'nama_murid',
-		// 		'label' => 'Nama Murid',
-		// 		'rules' => 'required'
-        //     ]
-        // ];
-        $this->load->view('viewdatakrb', $data);
-        
-        // $this->form_validation->set_rules($config);
-        // if ($this->form_validation->run() == FALSE)
-        // {
-        // } else {
-        // 	$this->Murid_model->saveDataMurid();
-        //     $this->session->set_flashdata('tambahMurid', 'ditambahkan');
-        //     redirect(base_url('admin/murid'));
-        // }
+        $this->load->view('krb/index');
     }
 
     public function detailkrb($id)
@@ -71,27 +54,20 @@ class krb extends CI_Controller{
 			redirect('admin/krb');
 		}
     }
-    public function tambahkrb()
+    public function insert_krb()
     {
-        $data['data_krb'] = $this->krb_model->getAllkrb();
-        
-        $config = [
-            [
-                'field' => 'nama_murid',
-				'label' => 'Nama Murid',
-				'rules' => 'required'
-            ]
+        $data = [
+            "nama" => $this->input->post('nama'),
+            // "nama_murid" => $this->input->post('nama_murid', true),
+            // "tempat_lahir" => $this->input->post('tempat_lahir', true),
+            // "tanggal_lahir" => $this->input->post('tanggal_lahir', true),
+            // "alamat" => $this->input->post('alamat', true),
+            // "nomor_hp" => $this->input->post('nomor_hp'),
+            // "sosmed" => $this->input->post('sosmed', true),
+            // "motto" => $this->input->post('motto', true),
+            // "foto_murid" => $this->uploadFotoMurid()
         ];
-
-        $this->form_validation->set_rules($config);
-        if ($this->form_validation->run() == FALSE)
-		{
-            $this->load->view('tambah_krb', $data);
-		} else {
-			$this->krb_model->saveDatakrb();
-            $this->session->set_flashdata('tambahkrb', 'ditambahkan');
-            redirect(base_url('admin/murid/tambahMurid'));
-		}
+        $this->db->insert('tbl_krb', $data);
     }
 
     public function daftarkrb($kelas)

@@ -4,29 +4,19 @@
             <thead>
                 <tr>
                     <th>Nomor</th>
-                    <th>Nama Posko</th>
-                    <th>Kapasitas</th>
-                    <th>Jumlah Pengungsi</th>
-                    <th>Penanggung Jawab</th>
-                    <th>Longtitude</th>
-                    <th>Latitude</th>
-                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>File</th>
+                    <th>Action</th>
                 </tr>
              </thead>
              <tbody>
              <?php $no=1; foreach ($mitigasi as $key=> $value ){?>
              <tr class="odd gradeX">
                  <td><?=$no++ ?></td>
-                <td><?=$value->waktu?></td>
-                <td><?=$value->nama_daerah?></td>
-                <td><?=$value->ancaman_mitigasi?></td>
-                <td><?=$value->kapasitas_mitigasi?></td>
-                <td><?=$value->kerentanan_mitigasi?></td>
-                <td><?=$value->resiko_mitigasi?></td>
+                <td><?=$value->nama?></td>
+                <td><a href="<?= base_url("assets/file/$value->file") ?>"><?= $value->file ?></a></td>  
                 <td>
-				<a href="<?=site_url('home/edit');?>" class="btn btn-xs btn-warning">Edit</a>
-				<a href="<?=site_url('home/delete/'.$value->id_mitigasi);?>" class="btn btn-xs btn-danger">Hapus</a>
-				<a href="<?=site_url('home/add');?>" class="btn btn-xs btn-success">Add Data</a>
+				<a href="<?=site_url('home/delete_krb/'.$value->id);?>" class="btn btn-xs btn-danger">Hapus</a>
             </tr>
         <?php } ?> 
             </tbody>
