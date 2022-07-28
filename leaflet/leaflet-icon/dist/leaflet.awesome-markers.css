@@ -29,6 +29,10 @@ Version: 1.0
   background-image: url('images/markers-soft@2x.png');
   background-size: 720px 46px;
  }
+ .awesome-marker {
+  background-image: url('images/posko.png');
+  background-size: 720px 46px;
+ }
  .awesome-marker-shadow {
   background-image: url('images/markers-shadow@2x.png');
   background-size: 35px 16px;

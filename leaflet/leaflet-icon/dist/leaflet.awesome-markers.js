@@ -119,6 +119,8 @@
         return new L.AwesomeMarkers.Icon(options);
     };
 
+    
+
 }(this, document));
 
 

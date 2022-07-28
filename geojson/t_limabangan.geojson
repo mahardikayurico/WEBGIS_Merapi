@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "t_limabangan",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Kecamatan": "Limbangan", "Desa": "Limabangan", "Waktu": "2017-01-16", "X": 420928, "Y": 9209220 }, "geometry": { "type": "Point", "coordinates": [ 110.283876802263819, -7.153506673827653 ] } }
-]
-}

@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "posko_kwonokerto",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nama_Posko": "Balai Kalurahan Wonokerto", "Latitude": -7.620949201, "Longtitude": 110.3829492, "Kapasitas": 48, "Jumlah_Pen": 0, "Penanggung": "Danny Rusdiana\n(081392035573)" }, "geometry": { "type": "Point", "coordinates": [ 110.3829492, -7.620949201 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "TK ABA Wonokerto", "Latitude": -7.625795651, "Longtitude": 110.3829009, "Kapasitas": 90, "Jumlah_Pen": 0, "Penanggung": "Sumani Handayani\n(081804069645)" }, "geometry": { "type": "Point", "coordinates": [ 110.3829009, -7.625795651 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "SD N Nganggrung", "Latitude": -7.625956822, "Longtitude": 110.38291, "Kapasitas": 150, "Jumlah_Pen": 0, "Penanggung": "Teguh Ruhanto\n(081802688788)" }, "geometry": { "type": "Point", "coordinates": [ 110.38291, -7.625956822 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "SD N Banyuurip I", "Latitude": -7.629551745, "Longtitude": 110.3782218, "Kapasitas": 229, "Jumlah_Pen": 0, "Penanggung": "Surmalahadi" }, "geometry": { "type": "Point", "coordinates": [ 110.3782218, -7.629551745 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Dusun Wisata Pulesari", "Latitude": -7.625755442, "Longtitude": 110.37159, "Kapasitas": 200, "Jumlah_Pen": 0, "Penanggung": "Didik Irwanto\n(085743128969)" }, "geometry": { "type": "Point", "coordinates": [ 110.37159, -7.625755442 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Dusun Arjosari", "Latitude": -7.626205723, "Longtitude": 110.3743909, "Kapasitas": 50, "Jumlah_Pen": 0, "Penanggung": "Didik Irwanto\n(085743128969)" }, "geometry": { "type": "Point", "coordinates": [ 110.3743909, -7.626205723 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Dusun Wisata Kelor", "Latitude": -7.641070714, "Longtitude": 110.3625268, "Kapasitas": 300, "Jumlah_Pen": 0, "Penanggung": "Rebatman\n(085950703920)" }, "geometry": { "type": "Point", "coordinates": [ 110.3625268, -7.641070714 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Balai Kalurahan Bangunkerto", "Latitude": -7.653386203, "Longtitude": 110.3566411, "Kapasitas": 200, "Jumlah_Pen": 0, "Penanggung": "Sarmin\n(081392250882)" }, "geometry": { "type": "Point", "coordinates": [ 110.3566411, -7.653386203 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Desa Wisata Pulewulung", "Latitude": -7.625490257, "Longtitude": 110.3688019, "Kapasitas": 250, "Jumlah_Pen": 0, "Penanggung": "Ganjar Asmara\n(082227274092)" }, "geometry": { "type": "Point", "coordinates": [ 110.3688019, -7.625490257 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Desa Wisata Plosokuning", "Latitude": -7.625462676, "Longtitude": 110.3641724, "Kapasitas": 328, "Jumlah_Pen": 0, "Penanggung": "Yayan Bintarto\n(08122754034)" }, "geometry": { "type": "Point", "coordinates": [ 110.3641724, -7.625462676 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Gedung pertemuan Pedukuhan Kembang", "Latitude": -7.634745355, "Longtitude": 110.3840009, "Kapasitas": 50, "Jumlah_Pen": 0, "Penanggung": "Rahman Hidayat\n(085601999099)" }, "geometry": { "type": "Point", "coordinates": [ 110.3840009, -7.634745355 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Pendopo Jakagarong", "Latitude": -7.638249154, "Longtitude": 110.3830119, "Kapasitas": 106, "Jumlah_Pen": 0, "Penanggung": "Agus Sugiarto\n(08122961398)" }, "geometry": { "type": "Point", "coordinates": [ 110.3830119, -7.638249154 ] } },
+{ "type": "Feature", "properties": { "Nama_Posko": "Champing Ground Jaka Garong", "Latitude": -7.638851948, "Longtitude": 110.3827021, "Kapasitas": 500, "Jumlah_Pen": 0, "Penanggung": "Agus Sugiarto\n(08122961398)" }, "geometry": { "type": "Point", "coordinates": [ 110.3827021, -7.638851948 ] } }
+]
+}

@@ -1,65 +1,86 @@
-<div id="map" style="height:500px" class="map"></div>
+<div id="map" style="height:450px" class="map"></div>
 
 	
 	<script>
 		var map = L.map('map', {
-			center: [-7.0390939,110.1877784], 
-			zoom: 10,
+			center: [-7.6138,110.4302], 
+			zoom: 11,
 			zoomControl: false
 		});
 		
 		
 		var bidang= L.layerGroup();
-		var longsorsedang= L.layerGroup();
-		var longsorrendah= L.layerGroup();
-		var longsortinggifix= L.layerGroup();
-		var longsorsangattinggi= L.layerGroup();
+		var krb_I= L.layerGroup();
+		var krb_II= L.layerGroup();
+		var krb_III= L.layerGroup();
+		var desa_terdampak = L.layerGroup();
+		var posko = L.layerGroup();
+		var sungai = L.layerGroup();
+		var radius = L.layerGroup();
+		var posko_wonokerto = L.layerGroup();
+		
+		
 	
 	
-		$.getJSON("<?= base_url() ?>geojson/longsorsedang.geojson",function(data){
+		$.getJSON("<?= base_url() ?>geojson/krb_I.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
  			var fillColor,
- 				Data = feature.properties.data;
+ 				Data = feature.properties.descriptio;
  			
-			return { color: "#e5eb34", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+			return { color: "#f3ff01", weight: 1, fillColor: fillColor, fillOpacity: .7 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>" + feature.properties.NAMOBJ + "</strong>")
+	  layer.bindPopup( "<strong>" + feature.properties.descriptio + "</strong>")
 	}
-	} ).addTo(longsorsedang);
+	} ).addTo(krb_I);
 	})		
     
-	$.getJSON("<?= base_url() ?>geojson/longsorrendah.geojson",function(data){
+	$.getJSON("<?= base_url() ?>geojson/krb_II.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
  			var fillColor,
- 				Data = feature.properties.data;
+ 				Data = feature.properties.descriptio;
  			
-			return { color: "#1cfc03", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+			return { color: "#fb9a99", weight: 1, fillColor: fillColor, fillOpacity: .7 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>" + feature.properties.NAMOBJ + "</strong>")
+	  layer.bindPopup( "<strong>" + feature.properties.descriptio + "</strong>")
 	}
-	} ).addTo(longsorrendah);
+	} ).addTo(krb_II);
 	})
 
 	
-	$.getJSON("<?= base_url() ?>geojson/longsorsangattinggi.geojson",function(data){
+	$.getJSON("<?= base_url() ?>geojson/krb_III.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
  			var fillColor,
- 				Data = feature.properties.data;
+ 				Data = feature.properties.descriptio;
  			
-			return { color: "#fc8403", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .7 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>" + feature.properties.NAMOBJ + "</strong>")
+	  layer.bindPopup( "<strong>" + feature.properties.descriptio + "</strong>")
 	}
-	} ).addTo(longsorsangattinggi);
+	} ).addTo(krb_III);
 	})
+	$.getJSON("<?= base_url() ?>geojson/posko.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	  layer.bindPopup( "<strong>" + feature.properties.Nama + "</strong>")
+	}
+	} ).addTo(posko);
+	})
+	
 
-	$.getJSON("<?= base_url() ?>geojson/longsortinggifix.geojson",function(data){
+
+	$.getJSON("<?= base_url() ?>geojson/desa_terdampak.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
  			var fillColor,
@@ -68,22 +89,52 @@
 			return { color: "#ff0000", weight: 1, fillColor: fillColor, fillOpacity: .5 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>" + feature.properties.NAMOBJ + "</strong>")
+	  layer.bindPopup( "<strong>"+ feature.properties.DESA + "</strong>")
 	}
-	} ).addTo(longsortinggifix);
+	} ).addTo(desa_terdampak);
 	})
 
+	$.getJSON("<?= base_url() ?>geojson/sungai.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature){
+ 			var fillColor,
+ 				Data = feature.properties.data;
+ 			
+			return { color: "#29a1f0", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	  layer.bindPopup( "<strong>"+ feature.properties.Shape_Leng + "</strong>")
+	}
+	} ).addTo(sungai);
+	})
+
+	$.getJSON("<?= base_url() ?>geojson/radius.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature){
+ 			var fillColor,
+ 				Data = feature.properties.data;
+ 			
+			return { color: "#29a1f0", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	  layer.bindPopup( "<strong>"+ feature.properties.Shape_Leng + "</strong>")
+	}
+	} ).addTo(radius);
+	})
 		var control = L.control.zoomBox({modal: true});
         map.addControl(control);
 
-		var redMarker = L.AwesomeMarkers.icon({
-    	icon: 'coffee',
-    	markerColor: 'red'
- 		});
-		 
-  	L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
-
-		var options = {
+		
+	     
+	  var gunung = new L.Icon({
+		iconUrl: 'http://localhost/webgis_krb/template/assets/img/15.PNG',
+		
+	  	iconSize:     [25, 25],
+	  	
+		});
+    L.marker([-7.5396, 110.4469], {icon: gunung}).bindPopup('GUNUNG MERAPI').addTo(map);
+	
+	var options = {
           position: 'topleft',
           lengthUnit: {
             factor: 0.539956803,    //  from km to nm
@@ -102,14 +153,12 @@
 
 		map.on('click', onMapClick);
         
-		var defaultLayer = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
+		var defaultLayer = L.tileLayer.provider('Esri.WorldImagery').addTo(map);
 
-		var baseLayers = {
-			'OpenStreetMap Default': defaultLayer,
-            'Esri WorldImagery': L.tileLayer.provider('Esri.WorldImagery'),
-            'Esri WorldTerrain': L.tileLayer.provider('Esri.WorldTerrain'),
-            'Esri WorldShadedRelief': L.tileLayer.provider('Esri.WorldShadedRelief'),
-            'Esri OceanBasemap': L.tileLayer.provider('Esri.OceanBasemap'),
+		var baseLayers = { 
+			
+            'Esri WorldImagery': defaultLayer,
+			'OpenStreetMap ': L.tileLayer.provider('OpenStreetMap.DE'),
 			
 		};
 
@@ -150,18 +199,23 @@
 		map.on('click', onMapClick);
 
 		var overlayLayers = {
-			'Potensi Longsor Rendah' : longsorrendah,
-			'Potensi Longsor Sedang' : longsorsedang,
-			'Potensi Longsor Tinggi' : longsortinggifix,
-			'Potensi Longsor Sangat Tinggi' : longsorsangattinggi,
-			'Titik Kejadian Longsor' : bidang 
+			//'Radius' : radius,
+			'Kawasan Rawan Bencana I' : krb_I,
+			'Kawasan Rawan Bencana II' : krb_II,
+			'Kawasan Rawan Bencana III' : krb_III,
+			'Sungai Utama' : sungai,
+			'Desa Terdampak' : desa_terdampak,
+			//'Titik Kejadian Longsor' : bidang, 
+			'Barak Pengungsian ' : posko
+			
+			
 		};
 
-		var layerControl = L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
+		var layerControl = L.control.layers( baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 		<?php foreach ($mitigasi as $key => $value) { ?>
         mitigasi = L.geoJSON(<?= $value->geojson; ?>, {
             style: {
-                color: 'white',
+                color: 'red',
                 dashArray: '1',
                 lineCap: 'butt',
                 lineJoin: 'miter',
@@ -182,7 +236,7 @@
  <figure class="card">
    <figcaption>
 	 <h2>INFORMASI PETA</span></h2>
-	 <p>Kabupaten Kendal, Jawa Tengah memiliki riwayat longsor 206 kejadian pada 2010-2020, menyebabkan 41 bangunan rusak dan 28 warga mengungsi. Ini menunjukkan bahwa longsor adalah permasalahan yang tidak dapat dianggap remeh. Peta resmi kerentanan longsor oleh  PVMBG dan Badan BPBD  Kabupaten Kendal yang berskala regional perlu diperbarui untuk kelengkapan data dan informasi.  Penelitian ini bertujuan untuk membuat zona potensi longsor untuk rekomendasi perencanaan dan pembangunan selanjutnya. Data yang digunakan meliputi citra Landsat 8 untuk identifikasi penggunaan lahan, curah hujan dari citra Himawari-8 2019, interpretasi litologi dan kelurusan yang divalidasi dengan data Pusat Survei Geologi 2013 dan validasi lapangan, serta kemiringan lereng dari DEM. Kalkulasi didasarkan pada kombinasi klasifikasi DVMBG 2004, BBPPSDLP 2009, dan PVMBG 2015 yang menunjukkan hasil bahwa potensi longsor rendah (44,05% atau 44.220 Ha) meliputi Kendal bagian utara dan sekitarnya. Potensi longsor sedang (50,47% atau 50.661 Ha) meliputi Kaliwungu Selatan, Boja, Gemuh dan sekitarnya. Potensi longsor tinggi (5,48% atau 5.500 Ha) meliputi Singorojo bagian utara dan barat, Sukorejo bagian selatan, Limbangan dan sekitarnya. Potensi longsor sangat tinggi (0,001% atau 1,3 Ha) meliputi daerah Sumber Rahayu dan Sriwulan Limbangan.</p>  
+	 <p>JANGAN LUPA DIISI</p>  
 </figure>
 
 </body>

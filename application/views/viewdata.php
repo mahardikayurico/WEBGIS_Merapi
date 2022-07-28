@@ -4,13 +4,13 @@
             <thead>
                 <tr>
                     <th>Nomor</th>
-                    <th>Waktu</th>
-                    <th>Desa</th>
-                    <th>Kecamatan</th>
-                    <th>Kabupaten</th>
+                    <th>Nama Posko</th>
+                    <th>Kapasitas</th>
+                    <th>Jumlah Pengungsi</th>
+                    <th>Penanggung Jawab</th>
                     <th>Longtitude</th>
                     <th>Latitude</th>
-                    <th>Action</th>
+                    <th>Foto</th>
                 </tr>
              </thead>
              <tbody>
