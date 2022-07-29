@@ -77,7 +77,7 @@
 	layer.bindPopup(`<div class="text-center">
 						<img src="http://localhost/krb/assets/img/${feature.properties.Image}" alt="yurico kintil" width="150" height="100">
 						<br>
-						<strong>${feature.properties.Nama}</strong>
+						<strong>Nama: ${feature.properties.Nama}</strong>
 					</div>`)
 	}
 	} ).addTo(posko);
