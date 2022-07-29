@@ -168,4 +168,13 @@ class Home extends CI_Controller
         $this->session->set_flashdata('pesan', 'Data Berhasil Disimpan');
         redirect('home/data');
     }
+
+    public function lat_bel()
+    {
+        $data = array(
+            'judul' => 'Informasi Lain',
+            'dataview' => 'viewlatbel'
+        );
+        $this->load->view('layout/viewgabungan', $data, false);
+    }
 }
