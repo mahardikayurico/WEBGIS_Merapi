@@ -73,7 +73,12 @@
 			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>" + feature.properties.Nama + "</strong>")
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/krb/assets/img/${feature.properties.Image}" alt="yurico kintil" width="150" height="100">
+						<br>
+						<strong>${feature.properties.Nama}</strong>
+					</div>`)
 	}
 	} ).addTo(posko);
 	})

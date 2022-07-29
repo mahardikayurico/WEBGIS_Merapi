@@ -1,64 +1,868 @@
 {
-"type": "FeatureCollection",
-"name": "posko",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Nama": "Barak Kalurahan Glagaharjo", "Lat": -7.64771, "Long": 110.46793 }, "geometry": { "type": "Point", "coordinates": [ 110.46793, -7.64771 ] } },
-{ "type": "Feature", "properties": { "Nama": "Lapangan Glagaharjo", "Lat": -7.64765, "Long": 110.46792 }, "geometry": { "type": "Point", "coordinates": [ 110.46792, -7.64765 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Muh. Cepitsari", "Lat": -7.64819, "Long": 110.46805 }, "geometry": { "type": "Point", "coordinates": [ 110.46805, -7.64819 ] } },
-{ "type": "Feature", "properties": { "Nama": "Panti asuhan al Hikmah ", "Lat": -7.6473, "Long": 110.46704 }, "geometry": { "type": "Point", "coordinates": [ 110.46704, -7.6473 ] } },
-{ "type": "Feature", "properties": { "Nama": "Barak Gayam", "Lat": -7.66005, "Long": 110.4699 }, "geometry": { "type": "Point", "coordinates": [ 110.4699, -7.66005 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Bronggang", "Lat": -7.6599, "Long": 110.4699 }, "geometry": { "type": "Point", "coordinates": [ 110.4699, -7.6599 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP Sunan Kalijaga", "Lat": -7.65971, "Long": 110.47045 }, "geometry": { "type": "Point", "coordinates": [ 110.47045, -7.65971 ] } },
-{ "type": "Feature", "properties": { "Nama": "Barak Koripan", "Lat": -7.69753, "Long": 110.48167 }, "geometry": { "type": "Point", "coordinates": [ 110.48167, -7.69753 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD N Pencar 2", "Lat": -7.68351, "Long": 110.47486 }, "geometry": { "type": "Point", "coordinates": [ 110.47486, -7.68351 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD N Tamanmartani", "Lat": -7.734815556, "Long": 110.4859065 }, "geometry": { "type": "Point", "coordinates": [ 110.4859065, -7.734815556 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD N Banaran", "Lat": -7.66801, "Long": 110.4731 }, "geometry": { "type": "Point", "coordinates": [ 110.4731, -7.66801 ] } },
-{ "type": "Feature", "properties": { "Nama": "Balai Kalurahan Tamanmartani", "Lat": -7.735939831, "Long": 110.4844322 }, "geometry": { "type": "Point", "coordinates": [ 110.4844322, -7.735939831 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP 4 Kalasan", "Lat": -7.739531828, "Long": 110.4746954 }, "geometry": { "type": "Point", "coordinates": [ 110.4746954, -7.739531828 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD N Kejambon 1", "Lat": -7.69103, "Long": 110.47599 }, "geometry": { "type": "Point", "coordinates": [ 110.47599, -7.69103 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Kejambon 2 ", "Lat": -7.69384, "Long": 110.48079 }, "geometry": { "type": "Point", "coordinates": [ 110.48079, -7.69384 ] } },
-{ "type": "Feature", "properties": { "Nama": "Balai Desa Wukirsari", "Lat": -7.90933923, "Long": 110.3934651 }, "geometry": { "type": "Point", "coordinates": [ 110.3934651, -7.90933923 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Kiyaran 1", "Lat": -7.657934214, "Long": 110.4404531 }, "geometry": { "type": "Point", "coordinates": [ 110.4404531, -7.657934214 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMK 1 Cangkringan", "Lat": -7.662709694, "Long": 110.4404867 }, "geometry": { "type": "Point", "coordinates": [ 110.4404867, -7.662709694 ] } },
-{ "type": "Feature", "properties": { "Nama": "Panti Sosial Bimomartani", "Lat": -7.682532005, "Long": 110.4587688 }, "geometry": { "type": "Point", "coordinates": [ 110.4587688, -7.682532005 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP Muhammadiyah Bimomartani", "Lat": -7.682550113, "Long": 110.4582732 }, "geometry": { "type": "Point", "coordinates": [ 110.4582732, -7.682550113 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP Taman Dewasa", "Lat": -7.681906301, "Long": 110.4570302 }, "geometry": { "type": "Point", "coordinates": [ 110.4570302, -7.681906301 ] } },
-{ "type": "Feature", "properties": { "Nama": "Lapangan Banjarharjo", "Lat": -7.682718897, "Long": 110.4573558 }, "geometry": { "type": "Point", "coordinates": [ 110.4573558, -7.682718897 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMPN 1 Cangkringan", "Lat": -7.649383055, "Long": 110.4436906 }, "geometry": { "type": "Point", "coordinates": [ 110.4436906, -7.649383055 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Watuadeg", "Lat": -7.648724599, "Long": 110.4436625 }, "geometry": { "type": "Point", "coordinates": [ 110.4436625, -7.648724599 ] } },
-{ "type": "Feature", "properties": { "Nama": "Barak Kiyaran", "Lat": -7.658542765, "Long": 110.440104 }, "geometry": { "type": "Point", "coordinates": [ 110.440104, -7.658542765 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMAN 1 Ngemplak", "Lat": -7.700321681, "Long": 110.4604314 }, "geometry": { "type": "Point", "coordinates": [ 110.4604314, -7.700321681 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Balong Jaten", "Lat": -7.68318034, "Long": 110.4508597 }, "geometry": { "type": "Point", "coordinates": [ 110.4508597, -7.68318034 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMAN 1 Cangkringan", "Lat": -7.649724894, "Long": 110.4335661 }, "geometry": { "type": "Point", "coordinates": [ 110.4335661, -7.649724894 ] } },
-{ "type": "Feature", "properties": { "Nama": "Ponpes Al Qodir Induk ", "Lat": -7.653459527, "Long": 110.4354535 }, "geometry": { "type": "Point", "coordinates": [ 110.4354535, -7.653459527 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP Taman Dewasa Cangkringan", "Lat": -7.624942353, "Long": 110.4354166 }, "geometry": { "type": "Point", "coordinates": [ 110.4354166, -7.624942353 ] } },
-{ "type": "Feature", "properties": { "Nama": "Gedung Serbaguna Plosorejo", "Lat": -7.626061124, "Long": 110.37442 }, "geometry": { "type": "Point", "coordinates": [ 110.37442, -7.626061124 ] } },
-{ "type": "Feature", "properties": { "Nama": "SDN Umbulharjo", "Lat": -7.625475525, "Long": 110.4358395 }, "geometry": { "type": "Point", "coordinates": [ 110.4358395, -7.625475525 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMK Muhammadiyah Pakem", "Lat": -7.663470136, "Long": 110.4142936 }, "geometry": { "type": "Point", "coordinates": [ 110.4142936, -7.663470136 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMA Islam 3 Pakem dan MTs YAPI Pakem", "Lat": -7.663628876, "Long": 110.4171823 }, "geometry": { "type": "Point", "coordinates": [ 110.4171823, -7.663628876 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMA Muhammadiyah Pakem", "Lat": -7.666707351, "Long": 110.421085 }, "geometry": { "type": "Point", "coordinates": [ 110.421085, -7.666707351 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMK Kanisius 1 Pakem", "Lat": -7.664427365, "Long": 110.4164716 }, "geometry": { "type": "Point", "coordinates": [ 110.4164716, -7.664427365 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Paraksari", "Lat": -7.655491968, "Long": 110.4187071 }, "geometry": { "type": "Point", "coordinates": [ 110.4187071, -7.655491968 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMK Hamong Putera", "Lat": -7.667285398, "Long": 110.4121793 }, "geometry": { "type": "Point", "coordinates": [ 110.4121793, -7.667285398 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMPN 3 Pakem", "Lat": -7.668878963, "Long": 110.4121295 }, "geometry": { "type": "Point", "coordinates": [ 110.4121295, -7.668878963 ] } },
-{ "type": "Feature", "properties": { "Nama": "MAN 4 Pakem", "Lat": -7.666018989, "Long": 110.4123624 }, "geometry": { "type": "Point", "coordinates": [ 110.4123624, -7.666018989 ] } },
-{ "type": "Feature", "properties": { "Nama": "SDN Pakem 2", "Lat": -7.670147901, "Long": 110.4108976 }, "geometry": { "type": "Point", "coordinates": [ 110.4108976, -7.670147901 ] } },
-{ "type": "Feature", "properties": { "Nama": "SDN Pakem 1 ", "Lat": -7.659347145, "Long": 110.4217289 }, "geometry": { "type": "Point", "coordinates": [ 110.4217289, -7.659347145 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMP Muhammadiyah ", "Lat": -7.66042685, "Long": 110.4226886 }, "geometry": { "type": "Point", "coordinates": [ 110.4226886, -7.66042685 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMPN 1 Pakem ", "Lat": -7.659613375, "Long": 110.4216027 }, "geometry": { "type": "Point", "coordinates": [ 110.4216027, -7.659613375 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Muhammadiyah ", "Lat": -7.659721759, "Long": 110.4216675 }, "geometry": { "type": "Point", "coordinates": [ 110.4216675, -7.659721759 ] } },
-{ "type": "Feature", "properties": { "Nama": "SLB Negeri Pakem Hargobinangun ", "Lat": -7.664012998, "Long": 110.4238508 }, "geometry": { "type": "Point", "coordinates": [ 110.4238508, -7.664012998 ] } },
-{ "type": "Feature", "properties": { "Nama": "Aula SMAN 1 Pakem ", "Lat": -7.658418511, "Long": 110.4220797 }, "geometry": { "type": "Point", "coordinates": [ 110.4220797, -7.658418511 ] } },
-{ "type": "Feature", "properties": { "Nama": "GOR Gambiran ", "Lat": -7.661547466, "Long": 110.4252731 }, "geometry": { "type": "Point", "coordinates": [ 110.4252731, -7.661547466 ] } },
-{ "type": "Feature", "properties": { "Nama": "SMAN 1 Pakem", "Lat": -7.658432531, "Long": 110.4220681 }, "geometry": { "type": "Point", "coordinates": [ 110.4220681, -7.658432531 ] } },
-{ "type": "Feature", "properties": { "Nama": "SDN Pandanpuro 1", "Lat": -7.64199551, "Long": 110.4159627 }, "geometry": { "type": "Point", "coordinates": [ 110.4159627, -7.64199551 ] } },
-{ "type": "Feature", "properties": { "Nama": "SDN Pandanpuro 2", "Lat": -7.630798246, "Long": 110.41759 }, "geometry": { "type": "Point", "coordinates": [ 110.41759, -7.630798246 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Tawangharjo", "Lat": -7.648199816, "Long": 110.3922915 }, "geometry": { "type": "Point", "coordinates": [ 110.3922915, -7.648199816 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Ibnu Abbas II", "Lat": -7.664394745, "Long": 110.3813879 }, "geometry": { "type": "Point", "coordinates": [ 110.3813879, -7.664394745 ] } },
-{ "type": "Feature", "properties": { "Nama": "Mts Negeri 7 Sleman", "Lat": -7.658756446, "Long": 110.3912469 }, "geometry": { "type": "Point", "coordinates": [ 110.3912469, -7.658756446 ] } },
-{ "type": "Feature", "properties": { "Nama": "SD Srowolan, Sembung", "Lat": -7.67145255, "Long": 110.3886057 }, "geometry": { "type": "Point", "coordinates": [ 110.3886057, -7.67145255 ] } },
-{ "type": "Feature", "properties": { "Nama": "Balai Besar Penelitian Bioteknologi dan Pemuliaan Tanaman Hutan", "Lat": -7.670410616, "Long": 110.3922734 }, "geometry": { "type": "Point", "coordinates": [ 110.3922734, -7.670410616 ] } },
-{ "type": "Feature", "properties": { "Nama": "Pondok Pesantren Darul Hikmah", "Lat": -7.673268328, "Long": 110.3907284 }, "geometry": { "type": "Point", "coordinates": [ 110.3907284, -7.673268328 ] } }
-]
+    "type": "FeatureCollection",
+    "name": "posko",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Barak Kalurahan Glagaharjo",
+                "Lat": -7.64771,
+                "Long": 110.46793
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.46793,
+                    -7.64771
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Lapangan Glagaharjo",
+                "Lat": -7.64765,
+                "Long": 110.46792
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.46792,
+                    -7.64765
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Muh. Cepitsari",
+                "Lat": -7.64819,
+                "Long": 110.46805
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.46805,
+                    -7.64819
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Panti asuhan al Hikmah ",
+                "Lat": -7.6473,
+                "Long": 110.46704
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.46704,
+                    -7.6473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Barak Gayam",
+                "Lat": -7.66005,
+                "Long": 110.4699
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4699,
+                    -7.66005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Bronggang",
+                "Lat": -7.6599,
+                "Long": 110.4699
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4699,
+                    -7.6599
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP Sunan Kalijaga",
+                "Lat": -7.65971,
+                "Long": 110.47045
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.47045,
+                    -7.65971
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Barak Koripan",
+                "Lat": -7.69753,
+                "Long": 110.48167
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.48167,
+                    -7.69753
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD N Pencar 2",
+                "Lat": -7.68351,
+                "Long": 110.47486
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.47486,
+                    -7.68351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD N Tamanmartani",
+                "Lat": -7.734815556,
+                "Long": 110.4859065
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4859065,
+                    -7.734815556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD N Banaran",
+                "Lat": -7.66801,
+                "Long": 110.4731
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4731,
+                    -7.66801
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Balai Kalurahan Tamanmartani",
+                "Lat": -7.735939831,
+                "Long": 110.4844322
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4844322,
+                    -7.735939831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP 4 Kalasan",
+                "Lat": -7.739531828,
+                "Long": 110.4746954
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4746954,
+                    -7.739531828
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD N Kejambon 1",
+                "Lat": -7.69103,
+                "Long": 110.47599
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.47599,
+                    -7.69103
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Kejambon 2 ",
+                "Lat": -7.69384,
+                "Long": 110.48079
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.48079,
+                    -7.69384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Balai Desa Wukirsari",
+                "Lat": -7.90933923,
+                "Long": 110.3934651
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3934651,
+                    -7.90933923
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Kiyaran 1",
+                "Lat": -7.657934214,
+                "Long": 110.4404531
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4404531,
+                    -7.657934214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMK 1 Cangkringan",
+                "Lat": -7.662709694,
+                "Long": 110.4404867
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4404867,
+                    -7.662709694
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Panti Sosial Bimomartani",
+                "Lat": -7.682532005,
+                "Long": 110.4587688
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4587688,
+                    -7.682532005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP Muhammadiyah Bimomartani",
+                "Lat": -7.682550113,
+                "Long": 110.4582732
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4582732,
+                    -7.682550113
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP Taman Dewasa",
+                "Lat": -7.681906301,
+                "Long": 110.4570302
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4570302,
+                    -7.681906301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Lapangan Banjarharjo",
+                "Lat": -7.682718897,
+                "Long": 110.4573558
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4573558,
+                    -7.682718897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMPN 1 Cangkringan",
+                "Lat": -7.649383055,
+                "Long": 110.4436906
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4436906,
+                    -7.649383055
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Watuadeg",
+                "Lat": -7.648724599,
+                "Long": 110.4436625
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4436625,
+                    -7.648724599
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Barak Kiyaran",
+                "Lat": -7.658542765,
+                "Long": 110.440104
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.440104,
+                    -7.658542765
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMAN 1 Ngemplak",
+                "Lat": -7.700321681,
+                "Long": 110.4604314
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4604314,
+                    -7.700321681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Balong Jaten",
+                "Lat": -7.68318034,
+                "Long": 110.4508597
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4508597,
+                    -7.68318034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMAN 1 Cangkringan",
+                "Lat": -7.649724894,
+                "Long": 110.4335661
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4335661,
+                    -7.649724894
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Ponpes Al Qodir Induk ",
+                "Lat": -7.653459527,
+                "Long": 110.4354535
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4354535,
+                    -7.653459527
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP Taman Dewasa Cangkringan",
+                "Lat": -7.624942353,
+                "Long": 110.4354166
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4354166,
+                    -7.624942353
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Gedung Serbaguna Plosorejo",
+                "Lat": -7.626061124,
+                "Long": 110.37442,
+                "Image": "1.desa_wono_kerto.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.37442,
+                    -7.626061124
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SDN Umbulharjo",
+                "Lat": -7.625475525,
+                "Long": 110.4358395
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4358395,
+                    -7.625475525
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMK Muhammadiyah Pakem",
+                "Lat": -7.663470136,
+                "Long": 110.4142936
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4142936,
+                    -7.663470136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMA Islam 3 Pakem dan MTs YAPI Pakem",
+                "Lat": -7.663628876,
+                "Long": 110.4171823
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4171823,
+                    -7.663628876
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMA Muhammadiyah Pakem",
+                "Lat": -7.666707351,
+                "Long": 110.421085
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.421085,
+                    -7.666707351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMK Kanisius 1 Pakem",
+                "Lat": -7.664427365,
+                "Long": 110.4164716
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4164716,
+                    -7.664427365
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Paraksari",
+                "Lat": -7.655491968,
+                "Long": 110.4187071
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4187071,
+                    -7.655491968
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMK Hamong Putera",
+                "Lat": -7.667285398,
+                "Long": 110.4121793
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4121793,
+                    -7.667285398
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMPN 3 Pakem",
+                "Lat": -7.668878963,
+                "Long": 110.4121295
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4121295,
+                    -7.668878963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "MAN 4 Pakem",
+                "Lat": -7.666018989,
+                "Long": 110.4123624
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4123624,
+                    -7.666018989
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SDN Pakem 2",
+                "Lat": -7.670147901,
+                "Long": 110.4108976
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4108976,
+                    -7.670147901
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SDN Pakem 1 ",
+                "Lat": -7.659347145,
+                "Long": 110.4217289
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4217289,
+                    -7.659347145
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMP Muhammadiyah ",
+                "Lat": -7.66042685,
+                "Long": 110.4226886
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4226886,
+                    -7.66042685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMPN 1 Pakem ",
+                "Lat": -7.659613375,
+                "Long": 110.4216027
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4216027,
+                    -7.659613375
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Muhammadiyah ",
+                "Lat": -7.659721759,
+                "Long": 110.4216675
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4216675,
+                    -7.659721759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SLB Negeri Pakem Hargobinangun ",
+                "Lat": -7.664012998,
+                "Long": 110.4238508
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4238508,
+                    -7.664012998
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aula SMAN 1 Pakem ",
+                "Lat": -7.658418511,
+                "Long": 110.4220797
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4220797,
+                    -7.658418511
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GOR Gambiran ",
+                "Lat": -7.661547466,
+                "Long": 110.4252731
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4252731,
+                    -7.661547466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SMAN 1 Pakem",
+                "Lat": -7.658432531,
+                "Long": 110.4220681
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4220681,
+                    -7.658432531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SDN Pandanpuro 1",
+                "Lat": -7.64199551,
+                "Long": 110.4159627
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.4159627,
+                    -7.64199551
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SDN Pandanpuro 2",
+                "Lat": -7.630798246,
+                "Long": 110.41759
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.41759,
+                    -7.630798246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Tawangharjo",
+                "Lat": -7.648199816,
+                "Long": 110.3922915
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3922915,
+                    -7.648199816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Ibnu Abbas II",
+                "Lat": -7.664394745,
+                "Long": 110.3813879
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3813879,
+                    -7.664394745
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Mts Negeri 7 Sleman",
+                "Lat": -7.658756446,
+                "Long": 110.3912469
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3912469,
+                    -7.658756446
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SD Srowolan, Sembung",
+                "Lat": -7.67145255,
+                "Long": 110.3886057
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3886057,
+                    -7.67145255
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Balai Besar Penelitian Bioteknologi dan Pemuliaan Tanaman Hutan",
+                "Lat": -7.670410616,
+                "Long": 110.3922734
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3922734,
+                    -7.670410616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Pondok Pesantren Darul Hikmah",
+                "Lat": -7.673268328,
+                "Long": 110.3907284
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.3907284,
+                    -7.673268328
+                ]
+            }
+        }
+    ]
 }
