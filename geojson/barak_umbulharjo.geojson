@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "barak_umbulharjo",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "No": 1, "Nama": "Ruang Ketoprak komplek Barak Brayut", "Latitude": -7.65310708, "Longtitude": 110.4324725, "Kapasitas": 73, "Pengungsi": 0, "Jawab": "Ramijo\n(082242566553)\n", "Image": "60.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4324725, -7.65310708 ] } },
+{ "type": "Feature", "properties": { "No": 2, "Nama": "SMAN 1 Cangkringan", "Latitude": -7.649403031, "Longtitude": 110.4334921, "Kapasitas": 95, "Pengungsi": 0, "Jawab": "Sutrisno\n(082135791201)\n", "Image": "61.jpg"  }, "geometry": { "type": "Point", "coordinates": [ 110.4334921, -7.649403031 ] } },
+{ "type": "Feature", "properties": { "No": 3, "Nama": "Ponpes Al Qodir Induk", "Latitude": -7.653512141, "Longtitude": 110.4355111, "Kapasitas": 389, "Pengungsi": 0, "Jawab": "Giri Sukarno\n(08562548153)\n", "Image": "62.jpg"  }, "geometry": { "type": "Point", "coordinates": [ 110.4355111, -7.653512141 ] } },
+{ "type": "Feature", "properties": { "No": 4, "Nama": "SMP Taman Dewasa Cangkringan", "Latitude": -7.625187854, "Longtitude": 110.4356281, "Kapasitas": 181, "Pengungsi": 0, "Jawab": "Kepala Dukuh\n(081578190059)", "Image": "63.jpg"  }, "geometry": { "type": "Point", "coordinates": [ 110.4356281, -7.625187854 ] } },
+{ "type": "Feature", "properties": { "No": 5, "Nama": "SDN Umbulharjo", "Latitude": -7.625486602, "Longtitude": 110.4358765, "Kapasitas": 120, "Pengungsi": 0, "Jawab": "Kepala Dukuh\n(081578190059)\n\n", "Image": "64.jpg"  }, "geometry": { "type": "Point", "coordinates": [ 110.4358765, -7.625486602 ] } }
+]
+}

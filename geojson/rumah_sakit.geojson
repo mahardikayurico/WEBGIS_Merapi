@@ -1,0 +1,33 @@
+{
+"type": "FeatureCollection",
+"name": "rumah_sakit",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "No": 1, "Nama": "RS Dharma", "Latitude": -7.823707965, "Longtitude": 110.4300733 }, "geometry": { "type": "Point", "coordinates": [ 110.4300733, -7.823707965 ] } },
+{ "type": "Feature", "properties": { "No": 2, "Nama": "RS Hermina Yogya", "Latitude": -7.76719446, "Longtitude": 110.4319168 }, "geometry": { "type": "Point", "coordinates": [ 110.4319168, -7.76719446 ] } },
+{ "type": "Feature", "properties": { "No": 3, "Nama": "RS Arvita Bunda", "Latitude": -7.762565106, "Longtitude": 110.4344685 }, "geometry": { "type": "Point", "coordinates": [ 110.4344685, -7.762565106 ] } },
+{ "type": "Feature", "properties": { "No": 4, "Nama": "RS JIH", "Latitude": -7.757809568, "Longtitude": 110.4034909 }, "geometry": { "type": "Point", "coordinates": [ 110.4034909, -7.757809568 ] } },
+{ "type": "Feature", "properties": { "No": 6, "Nama": "RS Condong Catur", "Latitude": -7.7544173, "Longtitude": 110.4057501 }, "geometry": { "type": "Point", "coordinates": [ 110.4057501, -7.7544173 ] } },
+{ "type": "Feature", "properties": { "No": 7, "Nama": "RSKIA Sadewa", "Latitude": -7.770869544, "Longtitude": 110.4158349 }, "geometry": { "type": "Point", "coordinates": [ 110.4158349, -7.770869544 ] } },
+{ "type": "Feature", "properties": { "No": 9, "Nama": "RSA UGM", "Latitude": -7.740536559, "Longtitude": 110.3506271 }, "geometry": { "type": "Point", "coordinates": [ 110.3506271, -7.740536559 ] } },
+{ "type": "Feature", "properties": { "No": 10, "Nama": "RS Queen Latifa", "Latitude": -7.762434533, "Longtitude": 110.3367729 }, "geometry": { "type": "Point", "coordinates": [ 110.3367729, -7.762434533 ] } },
+{ "type": "Feature", "properties": { "No": 11, "Nama": "RS PKU Muhammadiyah Gamping", "Latitude": -7.800190053, "Longtitude": 110.3176601 }, "geometry": { "type": "Point", "coordinates": [ 110.3176601, -7.800190053 ] } },
+{ "type": "Feature", "properties": { "No": 12, "Nama": "RSU Mitra Sehat", "Latitude": -7.808267027, "Longtitude": 110.2882289 }, "geometry": { "type": "Point", "coordinates": [ 110.2882289, -7.808267027 ] } },
+{ "type": "Feature", "properties": { "No": 13, "Nama": "RSIY PDHI", "Latitude": -7.776598117, "Longtitude": 110.4590321 }, "geometry": { "type": "Point", "coordinates": [ 110.4590321, -7.776598117 ] } },
+{ "type": "Feature", "properties": { "No": 14, "Nama": "RS Bhayangkara Polda DIY", "Latitude": -7.766020531, "Longtitude": 110.4718988 }, "geometry": { "type": "Point", "coordinates": [ 110.4718988, -7.766020531 ] } },
+{ "type": "Feature", "properties": { "No": 15, "Nama": "RS Panti Rini", "Latitude": -7.772073652, "Longtitude": 110.4667862 }, "geometry": { "type": "Point", "coordinates": [ 110.4667862, -7.772073652 ] } },
+{ "type": "Feature", "properties": { "No": 16, "Nama": "RS Panti Baktiningsih", "Latitude": -7.754586557, "Longtitude": 110.2424098 }, "geometry": { "type": "Point", "coordinates": [ 110.2424098, -7.754586557 ] } },
+{ "type": "Feature", "properties": { "No": 17, "Nama": "RS Sakina Idaman", "Latitude": -7.767269507, "Longtitude": 110.3679812 }, "geometry": { "type": "Point", "coordinates": [ 110.3679812, -7.767269507 ] } },
+{ "type": "Feature", "properties": { "No": 18, "Nama": "RSUP Dr. Sardjito", "Latitude": -7.768566901, "Longtitude": 110.3734833 }, "geometry": { "type": "Point", "coordinates": [ 110.3734833, -7.768566901 ] } },
+{ "type": "Feature", "properties": { "No": 19, "Nama": "RSGM UGM Prof. Soedomo", "Latitude": -7.77000317, "Longtitude": 110.373684 }, "geometry": { "type": "Point", "coordinates": [ 110.373684, -7.77000317 ] } },
+{ "type": "Feature", "properties": { "No": 20, "Nama": "RSKB Sinduadi", "Latitude": -7.757294142, "Longtitude": 110.3632096 }, "geometry": { "type": "Point", "coordinates": [ 110.3632096, -7.757294142 ] } },
+{ "type": "Feature", "properties": { "No": 21, "Nama": "RS Puri Husada", "Latitude": -7.705538446, "Longtitude": 110.3863367 }, "geometry": { "type": "Point", "coordinates": [ 110.3863367, -7.705538446 ] } },
+{ "type": "Feature", "properties": { "No": 22, "Nama": "RS Gramedika 10", "Latitude": -7.701190687, "Longtitude": 110.4169926 }, "geometry": { "type": "Point", "coordinates": [ 110.4169926, -7.701190687 ] } },
+{ "type": "Feature", "properties": { "No": 23, "Nama": "RS Mitra Paramedika", "Latitude": -7.713843582, "Longtitude": 110.4484776 }, "geometry": { "type": "Point", "coordinates": [ 110.4484776, -7.713843582 ] } },
+{ "type": "Feature", "properties": { "No": 24, "Nama": "RS Universitas Ahmad Dahlan", "Latitude": -7.747023392, "Longtitude": 110.4250843 }, "geometry": { "type": "Point", "coordinates": [ 110.4250843, -7.747023392 ] } },
+{ "type": "Feature", "properties": { "No": 25, "Nama": "RS Panti Nugroho", "Latitude": -7.668632234, "Longtitude": 110.4171676 }, "geometry": { "type": "Point", "coordinates": [ 110.4171676, -7.668632234 ] } },
+{ "type": "Feature", "properties": { "No": 27, "Nama": "RSUD Prambanan", "Latitude": -7.804363928, "Longtitude": 110.4831635 }, "geometry": { "type": "Point", "coordinates": [ 110.4831635, -7.804363928 ] } },
+{ "type": "Feature", "properties": { "No": 28, "Nama": "RS At-Turots Al-Islamy", "Latitude": -7.750355509, "Longtitude": 110.29386 }, "geometry": { "type": "Point", "coordinates": [ 110.29386, -7.750355509 ] } },
+{ "type": "Feature", "properties": { "No": 29, "Nama": "RSUD Sleman", "Latitude": -7.686751105, "Longtitude": 110.3419623 }, "geometry": { "type": "Point", "coordinates": [ 110.3419623, -7.686751105 ] } }
+]
+}

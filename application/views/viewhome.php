@@ -14,10 +14,15 @@
 		var krb_II= L.layerGroup();
 		var krb_III= L.layerGroup();
 		var desa_terdampak = L.layerGroup();
-		var posko = L.layerGroup();
+		var rumah_sakit = L.layerGroup();
 		var sungai = L.layerGroup();
 		var radius = L.layerGroup();
-		var posko_wonokerto = L.layerGroup();
+		var barak_wonokerto = L.layerGroup();
+		var barak_girikerto = L.layerGroup();
+		var barak_purwobinangun= L.layerGroup();
+		var barak_hargobinangun= L.layerGroup();
+		var barak_umbulharjo= L.layerGroup();
+		var barak_kapuharjo= L.layerGroup();
 		
 		
 	
@@ -64,7 +69,27 @@
 	}
 	} ).addTo(krb_III);
 	})
-	$.getJSON("<?= base_url() ?>geojson/posko.geojson",function(data){
+
+	$.getJSON("<?= base_url() ?>geojson/rumah_sakit.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	layer.bindPopup( "<strong>" + feature.properties.Nama + "</strong>")
+	//layer.bindPopup(`<div class="text-center">
+						//<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="yurico kintil" width="150" height="100">
+						//<br>
+						//<strong>Nama: ${feature.properties.Nama}</strong>
+					//</div>`)
+	}
+	} ).addTo(rumah_sakit);
+	})
+	
+	$.getJSON("<?= base_url() ?>geojson/Barak_Wonokerto.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature,latlng){
  			//var fillColor,
@@ -75,16 +100,144 @@
 	onEachFeature: function( feature, layer ){
 	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
 	layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/krb/assets/img/${feature.properties.Image}" alt="yurico kintil" width="150" height="100">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
-						<strong>Nama: ${feature.properties.Nama}</strong>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
 	}
-	} ).addTo(posko);
+	} ).addTo(barak_wonokerto );
 	})
-	
 
+	$.getJSON("<?= base_url() ?>geojson/Barak_Girikerto.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+	}
+	} ).addTo(barak_girikerto );
+	})
 
+	$.getJSON("<?= base_url() ?>geojson/barak_purwobinangun.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+	}
+	} ).addTo(barak_purwobinangun );
+	})
+
+	$.getJSON("<?= base_url() ?>geojson/barak_hargobinangun.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+	}
+	} ).addTo(barak_hargobinangun );
+	})
+
+	$.getJSON("<?= base_url() ?>geojson/barak_umbulharjo.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+	}
+	} ).addTo(barak_umbulharjo );
+	})
+
+	$.getJSON("<?= base_url() ?>geojson/barak_kapuharjo.geojson",function(data){
+ 	L.geoJson( data , {
+ 		style: function(feature,latlng){
+ 			//var fillColor,
+ 				Data = feature.properties.Nama;
+ 			
+			return { color: "#f30612", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+	},
+	onEachFeature: function( feature, layer ){
+	//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+	layer.bindPopup(`<div class="text-center">
+						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+	}
+	} ).addTo(barak_kapuharjo );
+	})
 	$.getJSON("<?= base_url() ?>geojson/desa_terdampak.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
@@ -113,16 +266,16 @@
 	} ).addTo(sungai);
 	})
 
-	$.getJSON("<?= base_url() ?>geojson/radius.geojson",function(data){
+	$.getJSON("<?= base_url() ?>geojson/radiuss.geojson",function(data){
  	L.geoJson( data , {
  		style: function(feature){
  			var fillColor,
  				Data = feature.properties.data;
  			
-			return { color: "#29a1f0", weight: 1, fillColor: fillColor, fillOpacity: .5 };
+			return { color: "#29a1f0", weight: 1, fillColor: fillColor, fillOpacity: 0 };
 	},
 	onEachFeature: function( feature, layer ){
-	  layer.bindPopup( "<strong>"+ feature.properties.Shape_Leng + "</strong>")
+	  layer.bindPopup( "<strong>"+ feature.properties.ket+ "</strong>")
 	}
 	} ).addTo(radius);
 	})
@@ -204,15 +357,20 @@
 		map.on('click', onMapClick);
 
 		var overlayLayers = {
-			//'Radius' : radius,
+			'Radius' : radius,
 			'Kawasan Rawan Bencana I' : krb_I,
 			'Kawasan Rawan Bencana II' : krb_II,
 			'Kawasan Rawan Bencana III' : krb_III,
 			'Sungai Utama' : sungai,
 			'Desa Terdampak' : desa_terdampak,
 			//'Titik Kejadian Longsor' : bidang, 
-			'Barak Pengungsian ' : posko
-			
+			'Fasilitas Rumah Sakit ' : rumah_sakit,
+			'Barak Wonokerto' :barak_wonokerto,
+			'Barak Girikerto':barak_girikerto,
+			'Barak Purwobinangun': barak_purwobinangun,
+			'Barak Hargobinangun':barak_hargobinangun,
+			'Barak Umbulharjo':barak_umbulharjo,
+			'Barak Kapuharjo':barak_kapuharjo
 			
 		};
 

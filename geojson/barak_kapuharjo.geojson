@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "barak_kapuharjo",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "No": 1, "Nama": "Balai Desa Wukirsari", "Latitude": -7.658080098, "Longtitude": 110.4437951, "Kapasitas": 250, "Pengungsi": 0, "Jawab": "Trisusana\n(0812131444522)", "Image": "70.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4437951, -7.658080098 ] } },
+{ "type": "Feature", "properties": { "No": 2, "Nama": "SD Kiyaran 1", "Latitude": -7.658005002, "Longtitude": 110.440443, "Kapasitas": 90, "Pengungsi": 0, "Jawab": "Trisusana \n(0812131444522)", "Image": "71.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.440443, -7.658005002 ] } },
+{ "type": "Feature", "properties": { "No": 3, "Nama": "SMK 1 Cangkringan", "Latitude": -7.663084957, "Longtitude": 110.4401171, "Kapasitas": 1277, "Pengungsi": 0, "Jawab": "Trisusana \n(0812131444522)", "Image":"72.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.4401171, -7.663084957 ] } },
+{ "type": "Feature", "properties": { "No": 4, "Nama": "Panti Sosial Bimomartani", "Latitude": -7.682514032, "Longtitude": 110.4588208, "Kapasitas": 350, "Pengungsi": 0, "Jawab": "Tugiman \n(085643745702)", "Image": "73.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4588208, -7.682514032 ] } },
+{ "type": "Feature", "properties": { "No": 5, "Nama": "SMP Muhammadiyah Bimomartani", "Latitude": -7.682704753, "Longtitude": 110.458211, "Kapasitas": 200, "Pengungsi": 0, "Jawab": "Kuwat\n(081328841496)", "Image": "74.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.458211, -7.682704753 ] } },
+{ "type": "Feature", "properties": { "No": 6, "Nama": "SMP Taman Dewasa", "Latitude": -7.682258851, "Longtitude": 110.4572139, "Kapasitas": 200, "Pengungsi": 0, "Jawab": "Kuwat \n(081328841496)", "Image": "75.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4572139, -7.682258851 ] } },
+{ "type": "Feature", "properties": { "No": 7, "Nama": "Lapangan Banjarharjo", "Latitude": -7.682866899, "Longtitude": 110.4572641, "Kapasitas": 150, "Pengungsi": 0, "Jawab": "Kuwat \n(081328841496)", "Image": "76.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4572641, -7.682866899 ] } },
+{ "type": "Feature", "properties": { "No": 8, "Nama": "SMPN 1 Cangkringan", "Latitude": -7.700308535, "Longtitude": 110.4605002, "Kapasitas": 180, "Pengungsi": 0, "Jawab": "Panggung Widodo \n(085643745702)", "Image": "77.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4605002, -7.700308535 ] } },
+{ "type": "Feature", "properties": { "No": 9, "Nama": "SD Watuadeg", "Latitude": -7.648737116, "Longtitude": 110.4439215, "Kapasitas": 90, "Pengungsi": 0, "Jawab": "Panggung Widodo \n(085643745702)", "Image": "78.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.4439215, -7.648737116 ] } },
+{ "type": "Feature", "properties": { "No": 10, "Nama": "Barak Kiyaran", "Latitude": -7.65862704, "Longtitude": 110.4399803, "Kapasitas": 150, "Pengungsi": 0, "Jawab": "Berry Sudarman \n(085292519393)", "Image": "79.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.4399803, -7.65862704 ] } },
+{ "type": "Feature", "properties": { "No": 11, "Nama": "SMAN 1 Ngemplak", "Latitude": -7.700308535, "Longtitude": 110.4605002, "Kapasitas": 200, "Pengungsi": 0, "Jawab": "Pairin \n(081236266590)\n", "Image": "80.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.4605002, -7.700308535 ] } },
+{ "type": "Feature", "properties": { "No": 12, "Nama": "SD N Jaten", "Latitude": -7.683294858, "Longtitude": 110.4508795, "Kapasitas": 90, "Pengungsi": 0, "Jawab": "Pairin \n(081236266590)", "Image": "81.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.4508795, -7.683294858 ] } }
+]
+}

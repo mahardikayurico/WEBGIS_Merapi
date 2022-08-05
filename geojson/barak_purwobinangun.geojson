@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "barak_purwobinangun",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "No": 1, "Nama": "Barak Kalurahan Purwobinangun", "Latitude": -7.649078049, "Longtitude": 110.3924295, "Kapasitas": 253, "Pengungsi": 0, "Jawab": "Misran \n(081229036456)", "Image": "30.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.3924295, -7.649078049 ] } },
+{ "type": "Feature", "properties": { "No": 2, "Nama": "SD Tawangharjo", "Latitude": -7.64820877, "Longtitude": 110.3922896, "Kapasitas": 253, "Pengungsi": 0, "Jawab": "Misran \n(081229036456)", "Image": "31.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.3922896, -7.64820877 ] } },
+{ "type": "Feature", "properties": { "No": 3, "Nama": "Karangasri", "Latitude": -7.663059704, "Longtitude": 110.3817221, "Kapasitas": 317, "Pengungsi": 0, "Jawab": "Gunawan  \n(081339001422)", "Image": "32.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.3817221, -7.663059704 ] } },
+{ "type": "Feature", "properties": { "No": 4, "Nama": "Shaba", "Latitude": -7.664449637, "Longtitude": 110.3812198, "Kapasitas": 317, "Pengungsi": 0, "Jawab": "Gunawan  \n(081339001422)", "Image": "33.jpg" }, "geometry": { "type": "Point", "coordinates": [ 110.3812198, -7.664449637 ] } },
+{ "type": "Feature", "properties": { "No": 5, "Nama": "SD Ibnu Abbas II", "Latitude": -7.664601489, "Longtitude": 110.381485, "Kapasitas": 317, "Pengungsi": 0, "Jawab": "Gunawan  \n(081339001422)", "Image": "34.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.381485, -7.664601489 ] } },
+{ "type": "Feature", "properties": { "No": 6, "Nama": "Mts Negeri 7 Sleman", "Latitude": -7.658765935, "Longtitude": 110.391261, "Kapasitas": 700, "Pengungsi": 0, "Jawab": "Parjiono\n082136555738", "Image": "35.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.391261, -7.658765935 ] } },
+{ "type": "Feature", "properties": { "No": 7, "Nama": "SD Srowolan, Sembung", "Latitude": -7.671591953, "Longtitude": 110.3884692, "Kapasitas": 385, "Pengungsi": 0, "Jawab": "Sigit P \n(082136254037)  ", "Image": "36.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.3884692, -7.671591953 ] } },
+{ "type": "Feature", "properties": { "No": 8, "Nama": "Pondok Pesantren Darul Hikmah", "Latitude": -7.673337724, "Longtitude": 110.3907923, "Kapasitas": 663, "Pengungsi": 0, "Jawab": "Dwi Hartanto\n089680130462", "Image": "37.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.3907923, -7.673337724 ] } },
+{ "type": "Feature", "properties": { "No": 9, "Nama": "Barak Timur Purwobinangun", "Latitude": -7.649637962, "Longtitude": 110.3940472, "Kapasitas": 50, "Pengungsi": 0, "Jawab": "Dwi Hartanto\n089680130462", "Image": "38.jpg"}, "geometry": { "type": "Point", "coordinates": [ 110.3940472, -7.649637962 ] } }
+]
+}
