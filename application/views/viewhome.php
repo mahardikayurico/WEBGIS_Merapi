@@ -8,7 +8,7 @@
 		zoomControl: false
 	});
 
-
+	var pos = L.layerGroup();
 	var bidang = L.layerGroup();
 	var krb_I = L.layerGroup();
 	var krb_II = L.layerGroup();
@@ -23,6 +23,7 @@
 	var barak_hargobinangun = L.layerGroup();
 	var barak_umbulharjo = L.layerGroup();
 	var barak_kapuharjo = L.layerGroup();
+	var barak_GlagahHarjo = L.layerGroup();
 
 
 
@@ -84,6 +85,36 @@
 			}
 		}).addTo(krb_III);
 	})
+	$.getJSON("<?= base_url() ?>geojson/pos.geojson", function(data) {
+		L.geoJson(data, {
+			style: function(feature, latlng) {
+				//var fillColor,
+				Data = feature.properties.Nama;
+
+				return {
+					color: "#f30612",
+					weight: 1,
+					fillColor: fillColor,
+					fillOpacity: .5
+				};
+			},
+			onEachFeature: function(feature, layer) {
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/hospital.PNG',
+
+					iconSize: [25, 25],
+
+				});
+				layer.bindPopup("<strong>" + feature.properties.Nama + "</strong>")
+				layer.setIcon(testIcon);
+				//layer.bindPopup(`<div class="text-center">
+				//<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="yurico kintil" width="150" height="100">
+				//<br>
+				//<strong>Nama: ${feature.properties.Nama}</strong>
+				//</div>`)
+			}
+		}).addTo(pos);
+	})
 
 	$.getJSON("<?= base_url() ?>geojson/rumah_sakit.geojson", function(data) {
 		L.geoJson(data, {
@@ -100,7 +131,7 @@
 			},
 			onEachFeature: function(feature, layer) {
 				var testIcon = new L.Icon({
-					iconUrl: 'http://localhost/webgis_krb/template/assets/img/15.PNG',
+					iconUrl: '<?= base_url() ?>template/assets/img/hospital.PNG',
 
 					iconSize: [25, 25],
 
@@ -130,9 +161,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -142,6 +178,7 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_wonokerto);
 	})
@@ -160,9 +197,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -172,6 +214,7 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_girikerto);
 	})
@@ -190,9 +233,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -202,6 +250,7 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_purwobinangun);
 	})
@@ -220,9 +269,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -232,6 +286,7 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_hargobinangun);
 	})
@@ -250,9 +305,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -262,6 +322,7 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_umbulharjo);
 	})
@@ -280,9 +341,14 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				//   layer.bindPopup( "<strong>" + feature.properties.Image + "</strong>")
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
 				layer.bindPopup(`<div class="text-center">
-						<img src="http://localhost/webgis_krb/assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
 						<br>
 						<strong>Nama Barak: ${feature.properties.Nama}</strong>
 						<br>
@@ -292,8 +358,44 @@
 						<br>
 						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
 					</div>`)
+				layer.setIcon(testIcon);
 			}
 		}).addTo(barak_kapuharjo);
+	}) 
+	$.getJSON("<?= base_url() ?>geojson/barak_GlagahHarjo.geojson", function(data) {
+		L.geoJson(data, {
+			style: function(feature, latlng) {
+				//var fillColor,
+				Data = feature.properties.Nama;
+
+				return {
+					color: "#f30612",
+					weight: 1,
+					fillColor: fillColor,
+					fillOpacity: .5
+				};
+			},
+			onEachFeature: function(feature, layer) {
+				var testIcon = new L.Icon({
+					iconUrl: '<?= base_url() ?>template/assets/img/baraks.PNG',
+
+					iconSize: [25, 25],
+
+				});
+				layer.bindPopup(`<div class="text-center">
+						<img src="<?= base_url() ?>assets/img/${feature.properties.Image}" alt="No Image" width="150" height="100">
+						<br>
+						<strong>Nama Barak: ${feature.properties.Nama}</strong>
+						<br>
+						<strong>Kapasitas: ${feature.properties.Kapasitas}</strong>
+						<br>
+						<strong>Jumlah Pengungsi : ${feature.properties.Pengungsi}</strong>
+						<br>
+						<strong>Penanggung Jawab : ${feature.properties.Jawab}</strong>
+					</div>`)
+				layer.setIcon(testIcon);
+			}
+		}).addTo(barak_GlagahHarjo);
 	})
 	$.getJSON("<?= base_url() ?>geojson/desa_terdampak.geojson", function(data) {
 		L.geoJson(data, {
@@ -309,7 +411,24 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				layer.bindPopup("<strong>" + feature.properties.DESA + "</strong>")
+				layer.bindPopup(`<div>
+						<strong> ${feature.properties.DESA}</strong>
+						<br>
+						<br>
+						<strong> Kependuduk </strong>
+						<br>
+						<strong>Laki-Laki: ${feature.properties.Laki}</strong>
+						<br>
+						<strong>Perempuan: ${feature.properties.Perempuan}</strong>
+						<br>
+						<strong>Luas : ${feature.properties.Luas}</strong>
+						<br>
+						<strong>Kepadatan : ${feature.properties.Kepadatan}</strong>
+						<br>
+						<div class="text-center">
+						<br>
+						<strong> ~Kependudukan DIY 2021~ </strong>
+						</div></div>`)
 			}
 		}).addTo(desa_terdampak);
 	})
@@ -328,7 +447,8 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				layer.bindPopup("<strong>" + feature.properties.Shape_Leng + "</strong>")
+				layer.bindPopup(`<div> 
+				               <strong> Panjang sungai utama :  ${feature.properties.Shape_Leng} KM </strong> </div>`)
 			}
 		}).addTo(sungai);
 	})
@@ -347,7 +467,9 @@
 				};
 			},
 			onEachFeature: function(feature, layer) {
-				layer.bindPopup("<strong>" + feature.properties.ket + "</strong>")
+				layer.bindPopup(`<div> 
+								<strong>  Jarak Radius Per 5 KM </strong>
+								</div>`)
 			}
 		}).addTo(radius);
 	})
@@ -359,7 +481,7 @@
 
 
 	var gunung = new L.Icon({
-		iconUrl: 'http://localhost/webgis_krb/template/assets/img/15.PNG',
+		iconUrl: '<?= base_url() ?>template/assets/img/15.PNG',
 
 		iconSize: [25, 25],
 
@@ -449,20 +571,22 @@
 	map.on('click', onMapClick);
 
 	var overlayLayers = {
+		'Pos Pengamatan' : pos,
 		'Radius': radius,
 		'Kawasan Rawan Bencana I': krb_I,
 		'Kawasan Rawan Bencana II': krb_II,
 		'Kawasan Rawan Bencana III': krb_III,
 		'Sungai Utama': sungai,
 		'Desa Terdampak': desa_terdampak,
-		//'Titik Kejadian Longsor' : bidang, 
 		'Fasilitas Rumah Sakit ': rumah_sakit,
 		'Barak Wonokerto': barak_wonokerto,
 		'Barak Girikerto': barak_girikerto,
 		'Barak Purwobinangun': barak_purwobinangun,
 		'Barak Hargobinangun': barak_hargobinangun,
 		'Barak Umbulharjo': barak_umbulharjo,
-		'Barak Kapuharjo': barak_kapuharjo
+		'Barak Kapuharjo': barak_kapuharjo,
+		'Barak Glagaharjo':barak_GlagahHarjo
+		
 
 	};
 
@@ -493,8 +617,8 @@
 
 	<figure class="card">
 		<figcaption>
-			<h2>INFORMASI PETA</span></h2>
-			<p>JANGAN LUPA DIISI</p>
+			<h2>Teknik Geomatika</span></h2>
+			<p></p>
 	</figure>
 
 </body>

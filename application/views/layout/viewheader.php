@@ -13,13 +13,13 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 12px;"> dibuat oleh : &nbsp;
+font-size: 12px;"> Teknik Geomatika : &nbsp;
 
 <?php if ($this->session->userdata('username') == "") { ?>
-			<a href="<?= site_url('auth/login') ?>" class="btn btn-danger square-btn-adjust"> Mahardika Yurico</a>
+			<a href="<?= site_url('auth/login') ?>" class="btn btn-danger square-btn-adjust"> UPN "Veteran" Yogyakarta</a>
 		<?php } else { ?>
 		
-			<a href="<?= site_url('auth/logout') ?>" class="btn btn-danger square-btn-adjust">Logout</a>
+			<a href="<?= site_url('auth/logout') ?>" class="btn btn-danger square-btn-adjust">.</a>
 		<?php } ?> 
 </div>
    <div style="color: orange;

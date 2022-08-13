@@ -50,7 +50,7 @@ class Model_mitigasi extends CI_Model //nama model
 	private function uploadFile()
     {
         $config['upload_path']          = 'assets/file';
-        $config['allowed_types']        = 'pdf|doc|docx|csv|xls|xlsx|ppt';
+        $config['allowed_types']        = 'pdf|doc|docx|csv|xls|xlsx|ppt|geojson|json';
 
         $this->upload->initialize($config);
 
